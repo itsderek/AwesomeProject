@@ -23,6 +23,15 @@ function DetailsScreen({ navigation }) {
   );
 }
 
+function PictureScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>This will be where you see restaurant pictures</Text>
+      <Button title="Home" onPress={() => navigation.navigate("Home")} />
+    </View>
+  );
+}
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
